@@ -5,8 +5,8 @@
     height: 100vh;
     background-size: cover; 
   background-position: center;
-  background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279137.jpg?w=740&t=st=1707166544~exp=1707167144~hmac=c5e93529fc05d5f451fb285cb37b374cd841d8286e4babab342eb43cd6ad0352');
-    
+  
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   }
   
   .form {

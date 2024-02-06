@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState ,} from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Home.css'
@@ -9,6 +9,9 @@ const handleJoin=(e)=>{
     e.preventDefault()
     navigate(`/room/${roomId}`)
 }
+useEffect(()=>{
+  
+})
 
   return (
     <div className="container">

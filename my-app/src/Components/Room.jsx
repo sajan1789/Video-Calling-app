@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
+import { useEffect } from 'react';
 const Room = () => {
 const {roomID}=useParams()
 const myMeeting=async(element)=>{
@@ -21,11 +22,23 @@ const myMeeting=async(element)=>{
           },
         ],
         scenario: {
-          mode: ZegoUIKitPrebuilt.GroupCall, // To implement 1-on-1 calls, modify the parameter here to [ZegoUIKitPrebuilt.OneONoneCall].
+          mode: ZegoUIKitPrebuilt.GroupCall, 
         },
         
       });
-}
+}  
+useEffect(() => {
+  const handlePopstate = () => {
+    // Refresh the browser when the back button is clicked
+    window.location.reload();
+  };
+
+  window.addEventListener('popstate', handlePopstate);
+
+  return () => {
+    window.removeEventListener('popstate', handlePopstate);
+  };
+}, []);
     
   return (
     <div ref={myMeeting}  style={{ width: '100vw', height: '100vh' }}>
