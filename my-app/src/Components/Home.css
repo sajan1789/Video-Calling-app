@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover; 
+  background-position: center;
+  background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279137.jpg?w=740&t=st=1707166544~exp=1707167144~hmac=c5e93529fc05d5f451fb285cb37b374cd841d8286e4babab342eb43cd6ad0352');
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    background-image: url('https://img.freepik.com/free-photo/background-gradient-lights_23-2149304985.jpg?w=1480&t=st=1707166637~exp=1707167237~hmac=129f3d28821450c8a2cd86d46dbacf9d89a2cf99dd80d9263daa1b829f3a3db0');
+   
+  }
+  
+  .input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    color: white;
+    background-image: url('https://img.freepik.com/free-photo/background-gradient-lights_23-2149304985.jpg?w=1480&t=st=1707166637~exp=1707167237~hmac=129f3d28821450c8a2cd86d46dbacf9d89a2cf99dd80d9263daa1b829f3a3db0');
+  }
+  .input::placeholder {
+    color: white
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
